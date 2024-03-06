@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <!-- Nav -->
+    <header>
+      <a href="#" class="logo">Portfolio</a>
+      <div class="toggle"></div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#cheifs">Cheifs</a></li>
+        <li><a href="#">Testimonial</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </header>
+    <!-- End of Nav -->
+    <!-- Main -->
+    <section class="main" id="home">
+      <div class="textBx">
+        <h1>Welcome to Meal</h1>
+        <a href="#">Reserve A Table</a>
+      </div>
+    </section>
+    <!-- Main -->
+    <section class="about" id="about">
+      <div class="textBx">
+        <h2>Find your best food</h2>
+        <p>Free Website Template For Restaurants Made by Colorlib</p>
+      </div>
+      <div class="flex-container">
+        <div class="imgbx"><img src="media/img_1.jpg" /></div>
+        <div>
+          <h3>VEGIES</h3>
+          <h3>BEEF EMPANADAS</h3>
+          <p>
+            Separated they live in Bookmarksgrove right at the coast of the
+            Semantics, a large language ocean.
+          </p>
+        </div>
+        <div class="imgbx"><img src="media/img_2.jpg" alt="" /></div>
+        <div>
+          <h3>VEGIES</h3>
+          <h3>BEEF EMPANADAS</h3>
+          <p>
+            Separated they live in Bookmarksgrove right at the coast of the
+            Semantics, a large language ocean.
+          </p>
+        </div>
+        <div class="imgbx"><img src="media/img_3.jpg" alt="" /></div>
+        <div>
+          <h3>VEGIES</h3>
+          <h3>BEEF EMPANADAS</h3>
+          <p>
+            Separated they live in Bookmarksgrove right at the coast of the
+            Semantics, a large language ocean.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="who" id="services">
+      <div class="textBx">
+        <h2>The Restaurant</h2>
+        <p>
+          Far far away, behind the word mountains, far from the countries
+          Vokalia and Consonantia, there live the blind texts. Separated they
+          live in Bookmarksgrove right at the coast of the Semantics, a large
+          language ocean. It is a paradisematic country, in which roasted parts
+          of sentences fly into your mouth.
+        </p>
+      </div>
+      <img src="media/bg_hero.png" alt="" />
+    </section>
+    <section class="meet" id="cheifs">
+      <h2>Meet The Chefs</h2>
+      <div class="flex-container">
+        <div class="box">
+          <img src="media/chef_1.jpg" alt="" />
+          <h2>Daniel Graham</h2>
+          <h3>MASTER CHEF</h3>
+          <p>
+            Far far away, behind the word mountains, far from the countries
+            Vokalia and Consonantia, there live the blind texts. Separated they
+            live in Bookmarksgrove right at the coast of the Semantics, a large
+            language ocean. <br />
+            Separated they live in Bookmarksgrove right at the coast of the
+            Semantics, a large language ocean. It is a paradisematic country.
+          </p>
+        </div>
+        <div class="box">
+          <img src="media/chef_2.jpg" alt="" />
+          <h2>Nick Browning</h2>
+          <h3>MASTER CHEF</h3>
+          <p>
+            Far far away, behind the word mountains, far from the countries
+            Vokalia and Consonantia, there live the blind texts. Separated they
+            live in Bookmarksgrove right at the coast of the Semantics, a large
+            language ocean. <br />
+            Separated they live in Bookmarksgrove right at the coast of the
+            Semantics, a large language ocean. It is a paradisematic country.
+          </p>
+        </div>
+      </div>
+    </section>
+    <script type="text/javascript">
+      window.addEventListener("scroll", () => {
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+      });
+    </script>
+  </body>
+</html>

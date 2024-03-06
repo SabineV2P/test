@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html,
+body {
+  scroll-behavior: smooth;
+}
+/* Nav Bar */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 100px;
+  height: 80px;
+  z-index: 1000;
+  /* background-color: #4070f4; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+}
+header.sticky {
+  background-color: black;
+  height: 60px;
+}
+header .logo {
+  color: #fff;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+header ul {
+  position: relative;
+  list-style: none;
+  display: flex;
+}
+header ul li {
+  position: relative;
+}
+header ul li a {
+  position: relative;
+  display: inline-block;
+  margin: 0 5px;
+  color: #fff;
+  font-weight: 700;
+  padding: 10px 15px;
+  text-decoration: none;
+  transition: 1s;
+}
+header ul li a:hover {
+  background-color: blueviolet;
+}
+/*End Of Nav Bar*/
+.main {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../media/slider-1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .textBx {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.main .textBx h1 {
+  font-size: 70px;
+  color: #fff;
+}
+.main .textBx a {
+  border: 2px solid #fff;
+  background: none;
+  font-size: 14px;
+  letter-spacing: 0.2em;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  margin: 10px auto;
+  padding: 1rem 3rem;
+  transition: 1s;
+}
+.main .textBx a:hover {
+  background-color: #fff;
+  color: black;
+}
+.about {
+  width: 100%;
+  /* height: 100vh; */
+  background-color: #f8f9fa;
+  padding: 1px;
+}
+
+.about .textBx {
+  margin: 5%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.about .textBx h2 {
+  font-size: 60px;
+}
+.about .flex-container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 10%;
+}
+.about .flex-container div {
+  width: 33%;
+  height: 430px;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+.about .flex-container div img {
+  width: 100%;
+  height: 100%;
+}
+.about .flex-container div h3 {
+  font-size: 32px;
+  margin: 2% auto;
+}
+.about .flex-container div p {
+  font-size: 28px;
+  padding: 10px 40px;
+  color: gray;
+}
+.who .textBx {
+  width: 60%;
+  margin: 5% auto;
+}
+.who .textBx h2 {
+  font-size: 64px;
+}
+.who .textBx p {
+  font-size: 28px;
+  padding: 10px 40px;
+  color: gray;
+}
+.who img {
+  max-width: 100%;
+}
+.meet h2 {
+  text-align: center;
+  font-size: 60px;
+  margin: 5%;
+}
+.meet .flex-container {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 10%;
+}
+.meet .flex-container .box {
+  width: 45%;
+  text-align: center;
+}
+.box h2 {
+  font-size: 50px;
+}
+.box img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+
+@media (max-width: 1250px) {
+  .about .flex-container {
+    flex-direction: column;
+  }
+  .about .flex-container div {
+    width: 100%;
+  }
+  .about .flex-container div img {
+    object-fit: cover;
+  }
+  .meet .flex-container {
+    flex-direction: column;
+    gap: 25px;
+  }
+}
